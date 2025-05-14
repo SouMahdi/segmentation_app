@@ -10,7 +10,7 @@ from tensorflow.keras.preprocessing.image import img_to_array
 # ---------------------------- CONFIG ----------------------------
 MODEL_FILENAME = "unet_mobilenetv2_finetuned_model.h5"
 DRIVE_FILE_ID = "1jz5EMrf-DILqHg33MWXstPHewvrMCvgu"  
-INPUT_SIZE = (224, 224)
+INPUT_SIZE = (128, 128)
 THRESHOLD = 0.5  # For converting probabilities to binary mask
 
 # -------------------------- STYLING -----------------------------
