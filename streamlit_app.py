@@ -6,6 +6,19 @@ from tensorflow.keras.preprocessing.image import img_to_array
 import cv2
 import os
 
+import os
+import gdown
+
+MODEL_FILENAME = "unet_mobilenetv2_finetuned_model.h5"
+DRIVE_FILE_ID = "1ABCdEfGhIjKlMnOP"  # replace with your actual ID
+
+# Download model from Google Drive if not already downloaded
+if not os.path.exists(MODEL_FILENAME):
+    gdown.download(f"https://drive.google.com/uc?id={DRIVE_FILE_ID}", MODEL_FILENAME, quiet=False)
+from tensorflow.keras.models import load_model
+model = load_model(MODEL_FILENAME)
+
+
 # ---- PAGE CONFIG ----
 st.set_page_config(page_title="Brain Tumor Segmentation", layout="wide")
 
