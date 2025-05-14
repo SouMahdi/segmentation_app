@@ -3,3 +3,4 @@ numpy
 opencv-python
 Pillow
 tensorflow>=2.9
+gdown
