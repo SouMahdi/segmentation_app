@@ -1,6 +1,7 @@
 streamlit
+tensorflow
 numpy
-opencv-python
-Pillow
-tensorflow>=2.9
+opencv-python-headless
+pillow
 gdown
+
